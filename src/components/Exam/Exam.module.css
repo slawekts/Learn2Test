@@ -1,0 +1,50 @@
+/* src/components/Exam/Exam.module.css */
+
+/* Exam.js - Quiz Container */
+.quizContainer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Exam.js - Common styles for text elements - Score & Question Number*/
+.textElement {
+    margin-bottom: 10px;
+}
+
+/* Question.js - Question Text */
+.question {
+    margin-bottom: 15px;
+}
+
+/* Question.js - Answers List */
+.answers {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Answer.js - Individual Answer Item */
+.answer {
+    margin-bottom: 10px;
+}
+
+/* Exam.js - Buttons for Checking Answer and Next Question */
+.quizButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+/* Feedback.js - Feedback for Correct Answer */
+.correctAnswer {
+    color: green;
+}
+
+/* Feedback.js - Feedback for Incorrect Answer */
+.incorrectAnswer {
+    color: red;
+}
+
+/* Exam.js - Shuffle Option Checkbox */
+.shuffleOption {
+    margin-top: 10px;
+}

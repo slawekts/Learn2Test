@@ -1,0 +1,41 @@
+/* src/components/Exam/ExamResults.module.css */
+
+/* ExamResults.js - Results Container */
+.resultsContainer {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* ExamResults.js - Final Score */
+.score {
+    margin-bottom: 20px;
+}
+
+/* ExamResults.js & IncorrectQuestions.js - Incorrect Questions Section */
+.incorrectQuestionsSection {
+    margin-top: 20px;
+}
+
+/* IncorrectQuestions.js - Individual Incorrect Question */
+.incorrectQuestion {
+    margin-bottom: 20px;
+}
+
+/* IncorrectQuestions.js - Correct Answer Highlight */
+.correctAnswer {
+    color: green;
+    font-weight: bold;
+}
+
+/* IncorrectQuestions.js - Incorrect Answer Highlight */
+.incorrectAnswer {
+    color: red;
+    font-weight: bold;
+}
+
+/* ExamResults.js - Buttons */
+.resultsButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+}

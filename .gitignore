@@ -11,6 +11,12 @@
 # production
 /build
 
+# public folder - ignore data subfolder
+public/data/
+
+# Ignore all README files
+README*
+
 # misc
 .DS_Store
 .env.local

@@ -1,3 +1,10 @@
+/* src/assets/styles/App.css */
+
+/* Global font size adjustment */
+body {
+  font-size: 1.125em; /* Adjust this value to increase or decrease the overall font size */
+}
+
 .App {
   text-align: center;
 }

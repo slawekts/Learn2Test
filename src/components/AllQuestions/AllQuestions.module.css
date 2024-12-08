@@ -1,0 +1,9 @@
+/* src/components/AllQuestions/AllQuestions.module.css */
+
+.correctAnswer {
+    color: green;
+}
+
+.incorrectAnswer {
+    color: red;
+}
