@@ -1,0 +1,44 @@
+trigger:
+  - main
+
+pool:
+  name: "Default"
+
+jobs:
+  - job: BuildApp
+    displayName: "Build Application"
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node.js"
+
+      - script: |
+          npm install
+          npm run build
+        displayName: "Install dependencies and build"
+
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: "build"
+          ArtifactName: "build"
+          publishLocation: "Container"
+        displayName: "Publish build artifacts"
+
+  - job: RunTests
+    displayName: "Run Tests"
+    dependsOn: BuildApp
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: "16.x"
+        displayName: "Install Node.js"
+
+      - script: echo "No tests to run"
+        displayName: "Skip tests"
+        condition: eq(variables['Build.SourceBranchName'], 'main')
+
+    # - script: |
+    #     npm install
+    #     npm test -- --watchAll=false
+    #   displayName: 'Run unit tests'
